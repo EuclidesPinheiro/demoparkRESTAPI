@@ -36,7 +36,7 @@ public class UsuarioService {
     @Transactional //sem readOnly = true pois estamos fazendo uma escrita
     public Usuario editPassword(Long id, String password) {
         Usuario user = getUsuarioById(id);
-        user.setPassword(password);
+        user.setPassword(password);;;;;;;
         return user;
     }
 
